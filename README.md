@@ -31,4 +31,5 @@ Indicates one proxy failure (cfscrape can’t access page though server)
 -x --proxy_file_location : Deafult: proxy.list, feel free to assign other list.
 ```
 
-[logo]: https://levyhsu.com/wp-content/uploads/2018/10/webwxgetmsgimg.jpeg "Proof of power"
+### Proof of Power
+![image](https://levyhsu.com/wp-content/uploads/2018/10/webwxgetmsgimg.jpeg)
