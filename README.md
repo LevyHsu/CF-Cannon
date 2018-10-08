@@ -34,5 +34,4 @@ python3 cf_cannon.py www.abc.com -t 1000 -d /index.php
 ![image](https://levyhsu.com/wp-content/uploads/2018/10/webwxgetmsgimg.jpeg)
 
 ### Notice that:
-Each "ERROR:root:’http://abc.com’ returned an error. Could not collect tokens."
-Indicates one proxy failure (cfscrape can’t access page though server)
+Each "ERROR:root:’http://abc.com’ returned an error. Could not collect tokens." indicates one proxy failure (cfscrape can’t access page though server)
