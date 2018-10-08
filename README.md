@@ -5,7 +5,7 @@ Third party proxy checker you may need:
 https://github.com/maxmalysh/python-proxy-checker
 
 ### Install:
-'''bash
+'''
 apt-get update
 apt-get -y upgrade
 apt-get install build-essential nodejs python-setuptools python3-setuptools
@@ -14,7 +14,7 @@ pip3 install PySocks requests cfscrape bs4 scapy-python3
 '''
 
 ### Run:
-'''bash
+'''
 python3 cf_cannon.py www.abc.com -t 1000 -d /index.php
 '''
 
