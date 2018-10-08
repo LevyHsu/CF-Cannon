@@ -18,9 +18,6 @@ pip3 install PySocks requests cfscrape bs4 scapy-python3
 python3 cf_cannon.py www.abc.com -t 1000 -d /index.php
 ```
 
-Each "ERROR:root:’http://abc.com’ returned an error. Could not collect tokens."
-Indicates one proxy failure (cfscrape can’t access page though server)
-
 ### Parameters:
 ```
 -d --dir : path of target, I.e: www.abc.com/index.php then -d /index.php
@@ -33,3 +30,7 @@ Indicates one proxy failure (cfscrape can’t access page though server)
 
 ### Proof of Power
 ![image](https://levyhsu.com/wp-content/uploads/2018/10/webwxgetmsgimg.jpeg)
+
+### Notice that:
+Each "ERROR:root:’http://abc.com’ returned an error. Could not collect tokens."
+Indicates one proxy failure (cfscrape can’t access page though server)
