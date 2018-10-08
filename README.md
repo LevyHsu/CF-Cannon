@@ -1,6 +1,8 @@
 # CF-Cannon
 ## CF-Cannon is a tool written in python to perform layer 7 stress test on your own server.
 
+For CF-bypass you'll need a proxy list with very good connection and low latency to your server.
+
 *Third party proxy checker you may need:*
 https://github.com/maxmalysh/python-proxy-checker
 
