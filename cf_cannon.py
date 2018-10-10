@@ -516,7 +516,7 @@ def main():
         print ("Target: ", args.host, " is protected by Cloudfalre.")
         print ("  Please wait 2mins for bypass calculation.   ")
         print ("---------------------------------------------------------------------")
-        for i in range(int(args.threads / 5)):
+        for i in range(args.threads):
             _thread.start_new_thread(generate_cf_token, (i,))
         time.sleep(120)
         for x in range(args.threads):
