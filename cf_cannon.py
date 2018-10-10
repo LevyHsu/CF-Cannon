@@ -1,17 +1,11 @@
 import socket
-import socks
 import argparse
 import _thread
 import threading
 import random
-import re
-import urllib.request
 import time
-import os
-import sys
 import subprocess
 import cfscrape
-from bs4 import BeautifulSoup
 
 parser = argparse.ArgumentParser(description="cfcannon")
 parser.add_argument('host', nargs="?", help="Host name, i.e: abc.com")
@@ -457,10 +451,7 @@ def is_protected_by_cf():
                 find_keyword = True
     except Exception:
         return False
-    if find_keyword:
-        return True
-    else:
-        return False
+    return find_keyword
 
 
 # set request for non cloud flare DDOS proction
