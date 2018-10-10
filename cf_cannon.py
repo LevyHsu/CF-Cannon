@@ -466,7 +466,7 @@ def set_request():
     request_list.append(request)
 
 
-# list = [proxy.ip:proxy.port:cftoken]
+# list = [proxy.ip#proxy.port#cftoken]
 # Gerenarate cookies and useragent for cloud flare challenge page
 def generate_cf_token(i):
     proxy = proxy_list[i].strip().split(":")
