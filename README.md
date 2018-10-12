@@ -29,7 +29,10 @@ python3 cf_cannon.py www.abc.com -t 1000 -d /index.php
 -l --time: Haven't done yet
 -x --proxy_file_location : Deafult: proxy.list, feel free to assign other list.
 ```
-
+### Don't forget:
+```
+ulimit -n 655350
+```
 ### Proof of Power
 ![image](https://levyhsu.com/wp-content/uploads/2018/10/webwxgetmsgimg.jpeg)
 
