@@ -537,9 +537,9 @@ def main():
         for x in range(args.threads):
             request = random.choice(request_list)
             if args.ssl:
-                RequestDefaultHTTPS(x + 1).start()
-            else:
                 RequestDefaultHTTP(x + 1).start()
+            else:
+                RequestDefaultHTTPS(x + 1).start()
             print ("Thread " + str(x) + " ready!")
         go.set()
 
