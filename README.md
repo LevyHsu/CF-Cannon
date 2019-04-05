@@ -39,3 +39,5 @@ ulimit -n 655350
 
 ### Notice that:
 Each "ERROR:root:’http://abc.com’ returned an error. Could not collect tokens." indicates one proxy failure (cfscrape can’t access page though server)
+
+The effiecy through proxy is still low, if you have ieda or update, welcome to merge.
