@@ -18,7 +18,7 @@ pip3 install PySocks requests cfscrape scapy-python3
 
 ### Run:
 ```
-python3 cf_cannon.py www.abc.com -t 1000 -d /index.php
+python3 cf_cannon.py www.sample-target.com -t 1000 -d /index.php
 ```
 
 ### Parameters:
