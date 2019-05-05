@@ -19,13 +19,13 @@ python attack.py
 Then use any third party API Tester:(i.e https://apitester.com/)
 ```
 attackinfo={
-	"T": 1,
+	"T": 8,
 	"charset": "utf-8",
-	"is_protected_by_cf": True,
+	"is_protected_by_cf": false,
 	"keywords": "welcome",
 	"path": "/index.php",
-	"peerCount": 1000,
-	"threadCount": 300,
+	"peerCount": 300,
+	"threadCount": 10000000,
 	"url": "http://www.sample.com"
 }
 ```
