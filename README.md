@@ -3,6 +3,7 @@
 ## CF-Cannon is a tool written in python to perform layer 7 stress test on your own server.
 # ---------------------------------------------
 # V2 Version
+## V2 version enables distributed attack on each nodes with penetration of Json protection page and can be (theoretically) deployed on infinite machines.
 ### Install:
 ```
 apt-get update
@@ -29,7 +30,7 @@ attackinfo={
 	"url": "http://www.sample.com"
 }
 ```
-##  Set "is_protected_by_cf" to be True only if you see following page:
+##  Set "is_protected_by_cf" to be true only if you see following page:
 ![alt text](https://www.a2hosting.com/images/uploads/knowledgebase_images/kb-cloudflare-under-attack-interstitial-page.png)
 # ---------------------------------------------
 
