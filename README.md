@@ -2,10 +2,10 @@
 # CF-Cannon
 ## CF-Cannon is a tool written in python to perform layer 7 stress test on your own server.
 # ---------------------------------------------
-# V2 Version
+## V2 Version
 ## V2 version enables distributed attack on each nodes with penetration of Json protection page and can be (theoretically) deployed on infinite machines.
 ### Install:
-```
+```bash
 apt-get update
 apt-get -y upgrade
 apt-get install build-essential nodejs python-setuptools
@@ -14,12 +14,12 @@ pip install demjson Flask pycurl
 ```
 
 ### Run (on each node):
-```
+```bash
 python attack.py
 ```
 Then use any third party API Tester:  (i.e https://apitester.com/)
 Post a json request to path written in attack.py (Default: /attack)
-```
+```json
 attackinfo={
 	"T": 8,
 	"charset": "utf-8",
@@ -50,7 +50,7 @@ Success simply suggest target web page still functions normally
 
 # ---------------------------------------------
 
-# V1 Version(NO LONGER UPDATED)
+## V1 Version(NO LONGER UPDATED)
 
 For CF-bypass you'll need a proxy list with very good connection and low latency to your server.
 
