@@ -1,7 +1,7 @@
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 # CF-Cannon
 ## CF-Cannon is a tool written in python to perform layer 7 stress test on your own server.
-# -------------------------------------------------------------------------------------
+# ---------------------------------------------
 # V2 Version
 ### Install:
 ```
@@ -29,8 +29,8 @@ attackinfo={
 	"url": "http://www.sample.com"
 }
 ```
+# ---------------------------------------------
 
-# -------------------------------------------------------------------------------------
 # V1 Version(NO LONGER UPDATED)
 
 For CF-bypass you'll need a proxy list with very good connection and low latency to your server.
