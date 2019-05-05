@@ -31,10 +31,20 @@ attackinfo={
 	"url": "http://www.sample.com"
 }
 ```
-##  Set "is_protected_by_cf" to be true only if you see following page:
+##  Note: Set "is_protected_by_cf" to be true only if you see following page:
 ![alt text](https://www.a2hosting.com/images/uploads/knowledgebase_images/kb-cloudflare-under-attack-interstitial-page.png)
 
+After sending POST request, you’re suppose to see this:
+![alt text](https://levyhsu.com/wp-content/uploads/2019/05/2.png)
 
+Failed means your node have no access to target (keyword not found). It can be caused by:
+
+- You have already take it down (Success)
+- Wrong keyword on html page
+- Your IP/Machine is on blacklist
+- Any other reason cause you have no access to this page
+
+Success simply suggest target web page still functions normally
 
 
 
