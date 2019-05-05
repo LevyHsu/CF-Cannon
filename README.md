@@ -17,7 +17,8 @@ pip install demjson Flask pycurl
 ```
 python attack.py
 ```
-Then use any third party API Tester:(i.e https://apitester.com/)
+Then use any third party API Tester:  (i.e https://apitester.com/)
+Post a json request to path written in attack.py (Default: /attack)
 ```
 attackinfo={
 	"T": 8,
@@ -32,6 +33,11 @@ attackinfo={
 ```
 ##  Set "is_protected_by_cf" to be true only if you see following page:
 ![alt text](https://www.a2hosting.com/images/uploads/knowledgebase_images/kb-cloudflare-under-attack-interstitial-page.png)
+
+
+
+
+
 # ---------------------------------------------
 
 # V1 Version(NO LONGER UPDATED)
