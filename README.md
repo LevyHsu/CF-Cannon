@@ -46,7 +46,7 @@ Failed means your node have no access to target (keyword not found). It can be c
 
 Success simply suggest target web page still functions normally
 
-## Disclaimer: Please make sure all your tests are legal and with consent of relevant parties as I won't be resposible for any consequence caused by this script.
+## Disclaimer: Please make sure all your tests are legal and with consent of relevant parties as I won't be responsible for any consequence caused by this script.
 
 # ---------------------------------------------
 
