@@ -18,6 +18,7 @@ pip install demjson Flask pycurl
 python attack.py
 ```
 Then use any third party API Tester:  (i.e https://apitester.com/)
+
 Post a json request to path written in attack.py (Default: /attack)
 ```json
 attackinfo={
