@@ -29,7 +29,7 @@ attackinfo={
 	"url": "http://www.sample.com"
 }
 ```
-## "is_protected_by_cf" shall only be True if you see following page:
+##  Set "is_protected_by_cf" to be True only if you see following page:
 ![alt text](https://www.a2hosting.com/images/uploads/knowledgebase_images/kb-cloudflare-under-attack-interstitial-page.png)
 # ---------------------------------------------
 
