@@ -12,10 +12,24 @@ apt-get install -y python-pip
 pip install demjson Flask pycurl 
 ```
 
-### Run:
+### Run (on each node):
 ```
 python attack.py
 ```
+Then use any third party API Tester:(i.e https://apitester.com/)
+```
+attackinfo={
+	"T": 1,
+	"charset": "utf-8",
+	"is_protected_by_cf": True,
+	"keywords": "welcome",
+	"path": "/index.php",
+	"peerCount": 1000,
+	"threadCount": 300,
+	"url": "http://www.sample.com"
+}
+```
+
 # -------------------------------------------------------------------------------------
 # V1 Version(NO LONGER UPDATED)
 
