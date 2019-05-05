@@ -1,7 +1,22 @@
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 # CF-Cannon
 ## CF-Cannon is a tool written in python to perform layer 7 stress test on your own server.
+# -------------------------------------------------------------------------------------
+# V2 Version
+### Install:
+```
+apt-get update
+apt-get -y upgrade
+apt-get install build-essential nodejs python-setuptools
+apt-get install -y python-pip
+pip install demjson Flask pycurl 
+```
 
+### Run:
+```
+python attack.py
+```
+# -------------------------------------------------------------------------------------
 # V1 Version(NO LONGER UPDATED)
 
 For CF-bypass you'll need a proxy list with very good connection and low latency to your server.
@@ -43,18 +58,3 @@ ulimit -n 655350
 Each "ERROR:root:’http://abc.com’ returned an error. Could not collect tokens." indicates one proxy failure (cfscrape can’t access page though server)
 
 The effiecy through proxy is still low, if you have ieda or update, welcome to merge.
---------------------------------------------------------------------------------------------------------------------------
-# V2 Version
-### Install:
-```
-apt-get update
-apt-get -y upgrade
-apt-get install build-essential nodejs python-setuptools
-apt-get install -y python-pip
-pip install demjson Flask pycurl 
-```
-
-### Run:
-```
-python attack.py
-```
