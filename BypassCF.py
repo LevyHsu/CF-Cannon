@@ -172,10 +172,10 @@ def getToken(url):
         c.setopt(pycurl.FOLLOWLOCATION, 1)
         c.setopt(pycurl.SSL_VERIFYPEER, 0)
         c.setopt(pycurl.SSL_VERIFYHOST, 0)
-        c.setopt(pycurl.HEADER, True)  # 扩展headrs
+        c.setopt(pycurl.HEADER, True)  # Extend headrs
         c.setopt(pycurl.HTTPHEADER, header)
         c.setopt(pycurl.CONNECTTIMEOUT, 3)
-        c.setopt(pycurl.FOLLOWLOCATION, False)  # 重定向
+        c.setopt(pycurl.FOLLOWLOCATION, False)  # Redirect
         c.setopt(pycurl.USERAGENT,UA)
         c.setopt(pycurl.HEADERFUNCTION, headers.write)
         c.setopt(pycurl.WRITEFUNCTION, body.write)
