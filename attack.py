@@ -25,7 +25,7 @@ def status():
     return demjson.encode(Bypass.getstatus()),json
 if __name__ == '__main__':
     print "Json:",demjson.encode({
-        'T':8, #单机线程
+        'T':8, #Threads
         'url': 'http://www.sample.com',
         'path': '/index.php?id=1',
         'charset': 'utf-8',
