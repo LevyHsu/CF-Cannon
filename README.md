@@ -44,7 +44,7 @@ Failed means your node have no access to target (keyword not found). It can be c
 - You have already take it down (Success)
 - Wrong keyword on html page
 - Your IP/Machine is on blacklist
-- Any other reason that may cause you have no access to this page
+- Any other reason that may cause your node have no access to this page
 
 Success simply suggest target web page still functions normally
 
